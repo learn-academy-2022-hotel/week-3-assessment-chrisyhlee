@@ -53,13 +53,12 @@ const fibFxn = (n) => {
   let firstNum = 0
   let secondNum = 1
 
-  for(var i=0; i<n+1; i++){
-      fibArr.push(firstNum);
+  for(var i=0; i<n; i++){
+      fibArr.push(secondNum);
       let nextNum = firstNum+secondNum; 
       firstNum = secondNum; 
       secondNum = nextNum;
   }
-  fibArr.shift()
   return fibArr
 }
 // console.log(fibFxn(9));
